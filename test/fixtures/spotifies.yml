@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  popularity: 1
+  dateOfDate: 2016-02-19 12:24:07
+
+two:
+  popularity: 1
+  dateOfDate: 2016-02-19 12:24:07

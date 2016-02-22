@@ -1,0 +1,2 @@
+class SpotifiesController < ApplicationController
+end
