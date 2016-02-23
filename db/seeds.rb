@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create name: 'Elefant Records', email:'dani@commonpeoplei.com', password:'12345678' 
+
+(1..10).each do |i|
+	Band.create(
+	name: Faker::Name.name,
+	spotifyID: Faker::Number.positive,
+	user_id: '1',
+	picture: Faker::Placeholdit.image)
+end
+
+	

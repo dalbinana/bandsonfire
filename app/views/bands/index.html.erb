@@ -1,0 +1,12 @@
+
+  <h2>Lista de bandas de <%= current_user.name %></h2>
+    <table class="table table-hover">
+    <tr><th>Picture</th><th>Name</th><th>Spotify ID</th></tr>
+    <% @bands.each do |band| %>
+    
+     <tr><td><img src=<%= band.picture %>> </td><td><%= band.name %> </td> <td><%= band.spotifyID %> </td></tr>
+    
+    <% end %>
+    </table>
+ 
+

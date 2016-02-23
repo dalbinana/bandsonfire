@@ -4,7 +4,12 @@ Rails.application.routes.draw do
   resources :spotifies
   resources :bands
   devise_for :users
+
   root to: "home#index"
+  resources :users do
+    resources :bands, only: [:index, :new, :create, :edit, :update, :destroy]
+  end
+
  
   
   # The priority is based upon order of creation: first created -> highest priority.
