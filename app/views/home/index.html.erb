@@ -4,7 +4,7 @@
     <p class="lead">
       Are your bands hot right now? Check it!
     </p>
-    <%= link_to "Add bands", bands_path, :class => 'btn btn-large btn-danger' %>
+    <%= link_to "See bands", user_bands_path(current_user), :class => 'btn btn-large btn-danger' %>
   <% else %>
     <h1>Welcome, new user!</h1>
     <p class="lead">
