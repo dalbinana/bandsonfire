@@ -1,5 +1,46 @@
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add a band</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for [@band] do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <br>
+        <%= f.label :spotifyID %>
+        <%= f.text_field :spotifyID %>
+        <%= f.hidden_field :user_id, value: current_user.id %>
 
-  <h2>List of bands from <%= current_user.name %> <%= link_to "Add bands", new_user_band_path, :class => "btn btn-success" %></h2>
+
+        
+        <br>
+        
+
+        <%= f.submit 'Save' %>
+      <% end %> 
+
+
+
+      
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  
+
+  <h2>List of bands from <%= current_user.name %> <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Add bands
+</button></h2>
     <table class="table table-hover">
     <tr><th>Picture</th><th>Name</th><th>Spotify ID</th></tr>
     <% @bands.each do |band| %>
@@ -8,5 +49,10 @@
     
     <% end %>
     </table>
+
+
+
+
+
  
 
