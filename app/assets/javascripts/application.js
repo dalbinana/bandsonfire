@@ -16,16 +16,17 @@
 //= require_tree .
 //= require bootstrap.js
 
-if (typeof window.KeepsLiftingMe === 'undefined') {
-  window.KeepsLiftingMe = {};
+if (typeof window.BandsOnFire === 'undefined') {
+  window.BandsOnFire = {};
 }
-KeepsLiftingMe.init = function () {
-  var spoti = new KeepsLiftingMe.Spotify;
- 
+BandsOnFire.init = function () {
 
-  // $('form').on('submit', spoti.fetchSong.bind(spoti));
+  var spoti = new BandsOnFire.Spotify;
+
+ $('form').on('submit', spoti.fetchSong.bind(spoti));
+ 
 }
-$(document).on('ready', KeepsLiftingMe.init);
+$(document).on('ready', BandsOnFire.init);
 
 
 

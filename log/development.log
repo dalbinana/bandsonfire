@@ -26692,3 +26692,1276 @@ Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138
 
 
 Started GET "/assets/application.self-a4c68396bf1ad2cbe2aa97e5448341239090ba9239b3c73ad4474a5d9bd11598.js?body=1" for ::1 at 2016-02-24 19:25:32 +0100
+
+
+Started GET "/" for ::1 at 2016-02-28 16:14:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-02-28 16:14:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_user_header.html.erb (1.1ms)
+Completed 200 OK in 944ms (Views: 931.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/bands.self-0326cc87ac42057df8aad25b314a0da3f2d7e11875605412a0fd603bff526835.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/application.self-a4c68396bf1ad2cbe2aa97e5448341239090ba9239b3c73ad4474a5d9bd11598.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:14:21 +0100
+
+
+Started POST "/users/sign_in" for ::1 at 2016-02-28 16:15:12 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"22ezIiy9Nhm2LyYMWoIMjlUTeJSwKXDDJ8f8oyJdDSpdhOvsJ24h9r+wD62o/jx9mRJqMqc/iirykXuSal2pGQ==", "user"=>{"email"=>"dani@commonpeoplei.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (70.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dani@commonpeoplei.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-02-24 15:57:21.775587"], ["current_sign_in_at", "2016-02-28 15:15:12.818030"], ["sign_in_count", 4], ["updated_at", "2016-02-28 15:15:12.819638"], ["id", 1]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms (ActiveRecord: 88.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-28 16:15:12 +0100
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:15:15 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.8ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_user_header.html.erb (1.1ms)
+Completed 200 OK in 138ms (Views: 46.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:21:43 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_user_header.html.erb (0.4ms)
+Completed 200 OK in 167ms (Views: 164.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/bands.self-0326cc87ac42057df8aad25b314a0da3f2d7e11875605412a0fd603bff526835.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/assets/application.self-6e01279adc93ab6f91206eca39ed82b944d7d55dabb7d9474ef9cca0f6f89c2b.js?body=1" for ::1 at 2016-02-28 16:21:43 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:24:35 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_user_header.html.erb (0.2ms)
+Completed 200 OK in 150ms (Views: 148.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/bands.self-0326cc87ac42057df8aad25b314a0da3f2d7e11875605412a0fd603bff526835.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:24:35 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:24:38 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_user_header.html.erb (0.1ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/bands.self-0326cc87ac42057df8aad25b314a0da3f2d7e11875605412a0fd603bff526835.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/bands.self-0326cc87ac42057df8aad25b314a0da3f2d7e11875605412a0fd603bff526835.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:24:38 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:24:39 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:24:39 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:27:06 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 166ms (Views: 164.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/bands.self-260d04655983013461b91c9ab53d1e36565dd4de5c7f856df05579f738723717.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:27:06 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/assets/bands.self-260d04655983013461b91c9ab53d1e36565dd4de5c7f856df05579f738723717.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:27:07 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:28:10 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (1.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 171ms (Views: 167.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:28:10 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:10 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:28:10 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:10 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:28:10 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/bands.self-72612ba9c8300ae849f6b3873d306aee993a4778f3ead8ca2f0ff5b4bd07d465.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/bands.self-72612ba9c8300ae849f6b3873d306aee993a4778f3ead8ca2f0ff5b4bd07d465.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:28:11 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:28:22 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_user_header.html.erb (0.1ms)
+Completed 200 OK in 146ms (Views: 144.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/bands.self-2eb2a37a79dc0c5537bba8352c1e67c9b85e0f63db468ec4afecdd868590e3b8.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:28:22 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/assets/bands.self-2eb2a37a79dc0c5537bba8352c1e67c9b85e0f63db468ec4afecdd868590e3b8.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:28:23 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:29:52 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_user_header.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 186.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/bands.self-614bbaa4f9bbd87e4ffb556537c41f11f88e645e0b8e7d00a2a2582774cedf0e.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/bands.self-614bbaa4f9bbd87e4ffb556537c41f11f88e645e0b8e7d00a2a2582774cedf0e.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/assets/application.self-7c192febe0b7fe75aebd5d9900495349aa0ab4aa4ea67af0ea887384f32da865.js?body=1" for ::1 at 2016-02-28 16:29:52 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:31:56 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.6ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_user_header.html.erb (0.4ms)
+Completed 200 OK in 165ms (Views: 162.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:31:56 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/bands.self-614bbaa4f9bbd87e4ffb556537c41f11f88e645e0b8e7d00a2a2582774cedf0e.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/application.self-e819466f599bd054e58539736631bcaa173958c0fe8223314919cad2fe1937fc.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/bands.self-614bbaa4f9bbd87e4ffb556537c41f11f88e645e0b8e7d00a2a2582774cedf0e.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/assets/application.self-e819466f599bd054e58539736631bcaa173958c0fe8223314919cad2fe1937fc.js?body=1" for ::1 at 2016-02-28 16:31:57 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:32:35 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_user_header.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/bands.self-614bbaa4f9bbd87e4ffb556537c41f11f88e645e0b8e7d00a2a2582774cedf0e.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/application.self-e819466f599bd054e58539736631bcaa173958c0fe8223314919cad2fe1937fc.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/bands.self-614bbaa4f9bbd87e4ffb556537c41f11f88e645e0b8e7d00a2a2582774cedf0e.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/assets/application.self-e819466f599bd054e58539736631bcaa173958c0fe8223314919cad2fe1937fc.js?body=1" for ::1 at 2016-02-28 16:32:36 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:35:36 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 163ms (Views: 161.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/bands.self-a9766a0ed893015f416c1b98ce188995fd61933925d6d01847eaae067be9c2e7.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/application.self-e819466f599bd054e58539736631bcaa173958c0fe8223314919cad2fe1937fc.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/bands.self-a9766a0ed893015f416c1b98ce188995fd61933925d6d01847eaae067be9c2e7.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/assets/application.self-e819466f599bd054e58539736631bcaa173958c0fe8223314919cad2fe1937fc.js?body=1" for ::1 at 2016-02-28 16:35:36 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:35:45 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 147ms (Views: 145.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/bands.self-a9766a0ed893015f416c1b98ce188995fd61933925d6d01847eaae067be9c2e7.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/application.self-349b3d65dbdd4feae614306b242e1aeafced8aac44df207f17854eab8e253fd5.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/bands.self-a9766a0ed893015f416c1b98ce188995fd61933925d6d01847eaae067be9c2e7.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/assets/application.self-349b3d65dbdd4feae614306b242e1aeafced8aac44df207f17854eab8e253fd5.js?body=1" for ::1 at 2016-02-28 16:35:46 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:46:20 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_user_header.html.erb (0.2ms)
+Completed 200 OK in 146ms (Views: 144.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/bands.self-a9766a0ed893015f416c1b98ce188995fd61933925d6d01847eaae067be9c2e7.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/application.self-a89fb453d806539ddb025ee1be92d910dbe6d35324b6d98bb6cd76f078ec4e8d.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/bands.self-a9766a0ed893015f416c1b98ce188995fd61933925d6d01847eaae067be9c2e7.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/assets/application.self-a89fb453d806539ddb025ee1be92d910dbe6d35324b6d98bb6cd76f078ec4e8d.js?body=1" for ::1 at 2016-02-28 16:46:20 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:47:13 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_user_header.html.erb (0.4ms)
+Completed 200 OK in 176ms (Views: 174.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bands.self-785f20f88cb3cae95bc3c86aaa6b1793172fc43d58d768e700e64c1fce9e5baa.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/application.self-eaf4dfc056ee6b8bca2e69b124aa107083ac90e3d7e7d7cbb0e3e4d840f998a2.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bands.self-785f20f88cb3cae95bc3c86aaa6b1793172fc43d58d768e700e64c1fce9e5baa.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/assets/application.self-eaf4dfc056ee6b8bca2e69b124aa107083ac90e3d7e7d7cbb0e3e4d840f998a2.js?body=1" for ::1 at 2016-02-28 16:47:13 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:49:16 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.1ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 167ms (Views: 164.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/bands.self-61f445bab3ae053e90b11147439cc619b786d01dfbce94797892ae0e055b5308.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/application.self-eaf4dfc056ee6b8bca2e69b124aa107083ac90e3d7e7d7cbb0e3e4d840f998a2.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:49:16 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/bands.self-61f445bab3ae053e90b11147439cc619b786d01dfbce94797892ae0e055b5308.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/assets/application.self-eaf4dfc056ee6b8bca2e69b124aa107083ac90e3d7e7d7cbb0e3e4d840f998a2.js?body=1" for ::1 at 2016-02-28 16:49:17 +0100
+
+
+Started GET "/users/1/bands" for ::1 at 2016-02-28 16:55:01 +0100
+Processing by BandsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBand Load (0.2ms)[0m  SELECT "bands".* FROM "bands" WHERE "bands"."user_id" = ?  [["user_id", 1]]
+  Rendered bands/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_user_header.html.erb (0.3ms)
+Completed 200 OK in 164ms (Views: 161.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.self-ce6c4fcfc5a561bfb04755ebc4d6a7e1b74ed65cd5a2120931d7b2e0549490b8.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/application.self-d28cfd424ea6a9b7dd05a8dc60e34eef10d5e92de884e3a5caf0e15f036e13c4.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/spotifies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/band.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/bands.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/bootstrap.min.self-aab82c0465d77a334ce3c89bd0a6642b2bd62859c2a60d53985ac3be1c3308d4.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/youtubes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/bands.self-885a691f1a9ae522a6e5230367f74b1e20a245885ae312f8810f26e8980eb8a8.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/application.self-eaf4dfc056ee6b8bca2e69b124aa107083ac90e3d7e7d7cbb0e3e4d840f998a2.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/bands.self-885a691f1a9ae522a6e5230367f74b1e20a245885ae312f8810f26e8980eb8a8.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/spotifies.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/user.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/youtubes.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
+
+
+Started GET "/assets/application.self-eaf4dfc056ee6b8bca2e69b124aa107083ac90e3d7e7d7cbb0e3e4d840f998a2.js?body=1" for ::1 at 2016-02-28 16:55:01 +0100
