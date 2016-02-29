@@ -45,3 +45,10 @@
   margin-bottom: 15px;
   padding: 7px 9px;
 }
+.picture_bands { 
+  background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+}

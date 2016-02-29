@@ -13,20 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require init
 //= require_tree .
 //= require bootstrap.js
 
-if (typeof window.BandsOnFire === 'undefined') {
-  window.BandsOnFire = {};
-}
-BandsOnFire.init = function () {
-
-  var spoti = new BandsOnFire.Spotify;
-
- $('form').on('submit', spoti.fetchSong.bind(spoti));
- 
-}
-$(document).on('ready', BandsOnFire.init);
 
 
 

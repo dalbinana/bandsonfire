@@ -1,22 +1,14 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
 (function () {
-	
 
 
-	// var preOrderedBands = [];
-	// var orderedBands = [];
 		
-	var Spotify = window.BandsOnFire.Spotify = function () {
-
-	
+	var Spotify = window.KeepsLiftingMe.Spotify = function () {	
 	};
-	///send the bands to the fetcher
-	// Spotify.prototype.prepareBands = function() {
-	// 	bands.forEach(spoti.fetchBands);
-	// 	/////AQUÏ ES ON HAURIA DE PASSAR L?ARRAY DE PREORDERES A RENDER, A L'ACABAR EL FOREACH
 
-	// };
+	Spotify.prototype.prepareBands = function(id) {
+		var id=$('#band_spotifyID').val();
+		spoti.fetchPicture(id);
+	};
 
 	// Spotify.prototype.fetchBands = function(id) {
 	// 	$.ajax({
@@ -28,6 +20,29 @@
 	//     }
 	//   });
 	// };
+	Spotify.prototype.fetchPicture = function(id) {
+		$.ajax({
+	    type: 'GET',
+	    url: 'https://api.spotify.com/v1/artists/' + id,
+	    success: spoti.renderPicture.bind(this),
+	    error: function () {
+	      console.log('Some error!');
+	    }
+	  });
+	};
+
+	Spotify.prototype.renderPicture = function(band) {
+		
+		var picture = band.images[0].url;
+		
+		$('.modal-body').after("<div class='picture_bands' style='background-image: url("+picture+")';></div>");
+		$('#band_picture').val(''+picture+'')
+		// $('.modal-body').after('<div class="picture_bands img-circle"> <img src='+picture+'> </div>');
+
+		
+	};
+
+
 
 	// Spotify.prototype.prepareForRenderBands = function(band) {
 	// 	var name = band.name;
@@ -63,7 +78,6 @@
 	// };
 
 	// Spotify.prototype.fetchSongs = function(e,country){
-	// 	console.log('en feth song')
 	// 	var id=event.currentTarget.id;
 	// 	var country=country || "ES"
 	// 	$.ajax({
@@ -102,6 +116,7 @@
 
 	var spoti = new Spotify();
 	
+
 	
 	 
 	

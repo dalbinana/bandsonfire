@@ -9,13 +9,16 @@ class BandsController < ApplicationController
 	def create
 		@user = current_user.id
 		@band = Band.new band_params
-	if @band.save
-      flash[:notice] = "Entry created successfulluy"
-      redirect_to action: 'index', controller:'bands'
-    else
-      render 'index'
-     end
-    end	
+		if @band.save
+	      flash[:notice] = "Entry created successfulluy"
+	      redirect_to action: 'index', controller:'bands'
+	    else
+	      render 'index'
+	     end
+  end
+
+  
+
 
 
 	
