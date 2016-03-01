@@ -32,14 +32,9 @@
 	};
 
 	Spotify.prototype.renderPicture = function(band) {
-		
 		var picture = band.images[0].url;
-		
 		$('.modal-body').after("<div class='picture_bands' style='background-image: url("+picture+")';></div>");
-		$('#band_picture').val(''+picture+'')
-		// $('.modal-body').after('<div class="picture_bands img-circle"> <img src='+picture+'> </div>');
-
-		
+		$('#band_picture').val(''+picture+'')		
 	};
 
 

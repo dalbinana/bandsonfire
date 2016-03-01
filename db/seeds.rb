@@ -7,12 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create name: 'Elefant Records', email:'dani@commonpeoplei.com', password:'12345678' 
 
-(1..10).each do |i|
-	Band.create(
-	name: Faker::Name.name,
-	spotifyID: Faker::Number.positive,
-	user_id: '1',
-	picture: Faker::Placeholdit.image)
-end
+Band.create name: 'Cola Jet Set', spotifyID:'2UKGuGLvM4j4qbxaGslLWT'
+Band.create name: 'La Bien Querida', spotifyID:'1C4F7PHDaEkp5ZL1rkkmrE'
+Band.create name: 'Cooper', spotifyID:'2Ynst7DZrEJnlaMM41ZCxd'
 
 	
