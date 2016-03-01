@@ -7,7 +7,7 @@
 
 	Spotify.prototype.prepareBands = function(id) {
 		var id=$('#band_spotifyID').val();
-		spoti.fetchPicture(id);
+		spoti.fetchPictureAndName(id);
 	};
 
 	// Spotify.prototype.fetchBands = function(id) {
@@ -20,20 +20,22 @@
 	//     }
 	//   });
 	// };
-	Spotify.prototype.fetchPicture = function(id) {
+	Spotify.prototype.fetchPictureAndName = function(id) {
 		$.ajax({
 	    type: 'GET',
 	    url: 'https://api.spotify.com/v1/artists/' + id,
-	    success: spoti.renderPicture.bind(this),
+	    success: spoti.renderPictureAndName.bind(this),
 	    error: function () {
 	      console.log('Some error!');
 	    }
 	  });
 	};
 
-	Spotify.prototype.renderPicture = function(band) {
+	Spotify.prototype.renderPictureAndName = function(band) {
 		var picture = band.images[0].url;
+		var name = band.name;
 		$('.modal-body').after("<div class='picture_bands' style='background-image: url("+picture+")';></div>");
+		$('#band_name').val(''+name+'')
 		$('#band_picture').val(''+picture+'')		
 	};
 

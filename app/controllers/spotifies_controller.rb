@@ -18,15 +18,17 @@ class SpotifiesController < ApplicationController
 	end	
 
 	def create_spoti (id,spoti_popularity)
-		spoti=Spotify.create(band_id: id, popularity: spoti_popularity)
-		spoti.save
+		
+		
+		unless Spotify.where('band_id= ? AND created_at >=?',2, Time.zone.now.beginning_of_day).exists?
+			spoti=Spotify.create(band_id: id, popularity: spoti_popularity)
+			@update_result.push("Band #{id} popularity updated successfulluy \n")
+		else
+			@update_result.push("The band #{id} has not been updated \n")
+			# spoti.save
+		end	
+		
 
-		if spoti.save
-      @update_result.push("#{id} Popularity updated successfulluy \n")
-    else
-    	@update_result.push("#{id} FAIL \n")
-    end
-    
 	end	
 end
 

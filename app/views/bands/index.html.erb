@@ -7,11 +7,12 @@
       </div>
       <div class="modal-body">
         <%= form_for [@band] do |f| %>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-        <br>
         <%= f.label :spotifyID %>
         <%= f.text_field :spotifyID %>
+       
+        <br>
+         <%= f.label :name %>
+        <%= f.text_field :name %>
         <%= f.hidden_field :user_id, value: current_user.id %>
         <%= f.hidden_field :picture, value: "url_picture" %>
 
