@@ -21,3 +21,24 @@
     </div>
   <% end %>
 </div>
+
+    <div class="table-responsive">
+                <table class="table table-striped spoticontent">
+                
+                    <tr>
+                    <th class="col-md-3">Image</th>
+                    <th class="col-md-6">Name of the band</th> 
+                    <th class="col-md-2">Popularity</th>
+                    <th class="col-md-1">Songs</th>
+                    </tr>
+                    <% @bands_to_show.each do |band| %>
+
+
+                    <tr><td><img class='picture_bands' style='background-image: url("<%= band[:picture] %>")'</td><td><%= band[:name] %> </td> <td><%= band[:popularity] %> </td></tr>
+                    <% end %>
+
+                                
+
+                </table>
+            </div>  
+

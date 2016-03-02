@@ -20,7 +20,7 @@ class SpotifiesController < ApplicationController
 	def create_spoti (id,spoti_popularity)
 		
 		
-		unless Spotify.where('band_id= ? AND created_at >=?',2, Time.zone.now.beginning_of_day).exists?
+		unless Spotify.where('band_id= ? AND created_at >=?',id, Time.zone.now.beginning_of_day).exists?
 			spoti=Spotify.create(band_id: id, popularity: spoti_popularity)
 			@update_result.push("Band #{id} popularity updated successfulluy \n")
 		else
