@@ -16,6 +16,16 @@ class BandsController < ApplicationController
 	      render 'index'
 	     end
   end
+  def destroy
+  	@user = current_user.id
+  	@band = Band.find params[:id]
+  	@band.destroy
+  	if @band.destroy
+      flash[:alarm] = "Arrrrggg deleted"
+    end  
+    redirect_to user_bands_path   
+  end	
+
 
   
 

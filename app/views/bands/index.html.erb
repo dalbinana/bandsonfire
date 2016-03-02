@@ -47,7 +47,10 @@
     <tr><th>Picture</th><th>Name</th><th>Spotify ID</th></tr>
     <% @bands.each do |band| %>
     
-     <tr><td><img class='picture_bands' style='background-image: url("<%= band.picture %>")'</td><td><%= band.name %> </td> <td><%= band.spotifyID %> </td></tr>
+     <tr><td><img class='picture_bands' style='background-image: url("<%= band.picture %>")'</td><td><%= band.name %> </td> <td><%= band.spotifyID %> </td>
+     <td><%= link_to('Delete', user_band_path(@user,band.id), method: :delete,data: {confirm:'Are you sure?'}) %>  </td>
+
+     </tr>
     
     <% end %>
     </table>
