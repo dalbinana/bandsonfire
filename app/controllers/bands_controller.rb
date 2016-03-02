@@ -3,6 +3,7 @@ class BandsController < ApplicationController
 		@user = current_user.id 
 		@bands = Band.where user_id: @user
 		@band = Band.new 
+		@spotify = Spotify.new
 
 		
 	end	
@@ -25,14 +26,6 @@ class BandsController < ApplicationController
     end  
     redirect_to user_bands_path   
   end	
-
-
-  
-
-
-
-	
-
 
 
 

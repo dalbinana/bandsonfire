@@ -4,6 +4,8 @@ module ApplicationHelper
     display_message(:alert) || display_message(:notice)
   end
 
+  
+
   private
   def display_message(type)
     if flash[type]

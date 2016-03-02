@@ -2,6 +2,11 @@ class SpotifiesController < ApplicationController
 	def index
 		@update_result=[]
 		Band.all.each do |item|
+			update_popularity(item)
+		end
+		
+	end	
+	def update_popularity(item)
 			id=item.id
 			band=item.spotifyID
 	  	url = 'https://api.spotify.com/v1/artists'
@@ -13,9 +18,8 @@ class SpotifiesController < ApplicationController
 			response = conn.get(band)
 			spoti_popularity=response.body["popularity"]
 			create_spoti(id,spoti_popularity)
-		end
-		
 	end	
+	
 
 	def create_spoti (id,spoti_popularity)
 		
