@@ -19,8 +19,6 @@ class SpotifiesController < ApplicationController
 			spoti_popularity=response.body["popularity"]
 			create_spoti(id,spoti_popularity)
 	end	
-	
-
 	def create_spoti (id,spoti_popularity)
 		
 		

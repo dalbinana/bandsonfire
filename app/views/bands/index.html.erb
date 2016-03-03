@@ -6,12 +6,14 @@
         <h4 class="modal-title">Add a band</h4>
       </div>
       <div class="modal-body">
+      <div class='picture_search_bands picture_form' style='background-image: url("https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w300")';></div>
         <%= form_for [@band] do |f| %>
+
         <%= f.label :spotifyID %>
         <%= f.text_field :spotifyID %>
         <br>
          <%= f.label :name %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name %> <span id='search' class="listen material-icons md-48">search</span> 
         <%= f.hidden_field :user_id, value: current_user.id %>
         <%= f.hidden_field :picture, value: "url_picture" %>
 
@@ -20,8 +22,7 @@
         <br>
         
 
-        <%= f.submit 'Save' %>
-      <% end %> 
+        
 
 
 
@@ -31,8 +32,9 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      <button type="submit" class="btn btn-primary">Add to your bands</button>
+     
+      <% end %> 
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

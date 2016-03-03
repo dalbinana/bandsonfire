@@ -1,7 +1,4 @@
 (function () {
-
-
-		
 	var Spotify = window.KeepsLiftingMe.Spotify = function () {	
 	};
 
@@ -10,16 +7,6 @@
 		spoti.fetchPictureAndName(id);
 	};
 
-	// Spotify.prototype.fetchBands = function(id) {
-	// 	$.ajax({
-	//     type: 'GET',
-	//     url: 'https://api.spotify.com/v1/artists/' + id,
-	//     success: spoti.prepareForRenderBands.bind(this),
-	//     error: function () {
-	//       console.log('Some error!');
-	//     }
-	//   });
-	// };
 	Spotify.prototype.fetchPictureAndName = function(id) {
 		$.ajax({
 	    type: 'GET',
@@ -34,89 +21,58 @@
 	Spotify.prototype.renderPictureAndName = function(band) {
 		var picture = band.images[0].url;
 		var name = band.name;
-		$('.modal-body').after("<div class='picture_bands' style='background-image: url("+picture+")';></div>");
+		$('.picture_bands').css("background-image", "url(''+picture+'')");
 		$('#band_name').val(''+name+'')
 		$('#band_picture').val(''+picture+'')		
 	};
 
+	Spotify.prototype.searchBands = function(name) {
+		$(".spoticontent").empty();
+		var name=$('#band_name').val();
+		spoti.fetchBandsByName(name);
+	}
 
+	Spotify.prototype.fetchBandsByName = function(name) {
+		$.ajax({
+	    type: 'GET',
+	    url: 'https://api.spotify.com/v1/search?q='+name+'&type=artist',
+	    success: spoti.renderBands.bind(this),
+	    error: function () {
+	      console.log('Some error!');
+	    }
+	  });
 
-	// Spotify.prototype.prepareForRenderBands = function(band) {
-	// 	var name = band.name;
-	// 	var picture = band.images[0].url;
-	// 	var popularity = band.popularity;
-	// 	var id = band.id;
-	// 	preOrderedBands.push({id: id,name: name, picture: picture, popularity: popularity}); 
-	// 	if (preOrderedBands.length === bands.length) {
+	}
+
+	Spotify.prototype.renderBands = function(bands) {
+
+		var band = bands.artists.items
+		band.forEach( function(band) {
+			$('.modal-body').after('<table class="table table-condensed table-hover spoticontent"><tr class="select-rows addToForm" data-id='+ band.id +' data-picture='+band.images[0].url+' data-name="'+band.name+'"><td><div class="picture_bands_small" style="background-image: url('+band.images[0].url+')";></div></td><td>'+band.name+'</td></tr></table>' );
 			
-	// 		orderedBands=spoti.orderBands(preOrderedBands, 'popularity');
-	// 		spoti.renderBands();
-	// 	}
 
-		
+			$('.addToForm').on('click', spoti.renderInForm.bind(this));
 
 			
-	// };
-
-	// Spotify.prototype.orderBands = function(array, key) {
-	// 	return array.sort(function(a, b) {
-	// 		var x = a[key]; var y = b[key];
-	// 		return ((x < y) ? 1 : ((x > y) ? -1 :0));
-	// 	});	
-	// };
-
-	// Spotify.prototype.renderBands = function(){	
-	// 	for (i=0; i < orderedBands.length; i++){
-	// 		var item = orderedBands[i]	
-	// 	// $('.spoticontent').append('<tr class="table_rows"><td><div class="picture_bands"style="background-image:url("'+item.picture+'");"></div></td><td class="band_name">'+item.name+'</td><td class="popularity">'+item.popularity+'</td><td class="view_more">View more</td> </tr>');
-	// 	$('.spoticontent').append('<tr class="table_rows"><td><div class="picture_bands img-circle"> <img src='+item.picture+'> </div></td><td class="band_name">'+item.name+'</td><td class="popularity">'+item.popularity+'</td><td class="view_more material-icons md-48" data-toggle="modal" data-target="#myModal" id="'+item.id+'">list</td> </tr>');
-	// 	};
-	// 	$('.view_more').on('click', spoti.fetchSongs.bind(this));
-	// };
-
-	// Spotify.prototype.fetchSongs = function(e,country){
-	// 	var id=event.currentTarget.id;
-	// 	var country=country || "ES"
-	// 	$.ajax({
-	//     type: 'GET',
-	//     url: 'https://api.spotify.com/v1/artists/'+id+'/top-tracks?country='+country,
-	//     success: spoti.renderSongs.bind(this),
-	//     error: function () {
-	//       console.log('Some error!');
-	//     }
-	//   });
-	// };
-
-	// Spotify.prototype.renderSongs = function(songs) {
-	// 	var eachSong = songs.tracks;
-	// 	$('.list_of_songs').html("");
+		})
 		
-		
-	// 	for (i = 0; i < eachSong.length; i++) { 
- //    	$('.list_of_songs').append('<tr class="table_rows"> <td class="song_name">'+eachSong[i].name+'</td><td class "popularity">'+eachSong[i].popularity+'</td><td class="listen material-icons md-48"><a href="'+eachSong[i].external_urls.spotify+'" target="_blank">play_circle_filled</td></tr>');
-	// 	}
+	}
 
+	Spotify.prototype.renderInForm = function(e) {
 
-
-	// }
-
-
-
-	
-
-	
-
-
-
-
+		var spotifyID=$(e.currentTarget).data('id');
+		var name=$(e.currentTarget).data('name');
+		var picture=$(e.currentTarget).data('picture');
+		$('#band_spotifyID').val(spotifyID);
+		$('#band_name').val(name);
+		$('.picture_form').css("background-image", "url('"+picture+"')");
+		$('#band_picture').val(picture);	
+	}
 
 
 	var spoti = new Spotify();
 	
-
 	
-	 
-	
-	 
+ 
 	
 })();
