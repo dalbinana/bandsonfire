@@ -18,7 +18,9 @@
  */
 
 /* User sign in and sign forms. */
-
+.jumbotron {
+  padding-left: 30px;
+}
 
 .border-form-div {
   max-width: 300px;

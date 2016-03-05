@@ -12,8 +12,11 @@ class HomeController < ApplicationController
   		@bands_to_show << band_hash 	
   	end	
   	@bands_to_show=@bands_to_show.sort_by { |hsh| hsh[:popularity]}.reverse
-  
 
+
+    
+
+    
   	
   	
   end

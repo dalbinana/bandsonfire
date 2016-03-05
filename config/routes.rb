@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   resources :spotifies
   resources :bands
   devise_for :users
+  get '/banddb' => 'bands#list' 
 
   root to: "home#index"
+  
   resources :users do
     resources :bands, only: [:index, :new, :create, :edit, :update, :destroy]
   end

@@ -31,7 +31,11 @@ gem 'autoprefixer-rails'
 
 gem 'delayed_job_active_record'
 
-gem 'rspotify'
+gem "chartkick"
+gem 'dateslices', '~> 0.0.3'
+# gem 'googlecharts'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

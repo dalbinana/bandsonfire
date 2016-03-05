@@ -4,8 +4,6 @@ class BandsController < ApplicationController
 		@bands = Band.where user_id: @user
 		@band = Band.new 
 		@spotify = Spotify.new
-
-		
 	end	
 	def create
 		@user = current_user.id
@@ -50,6 +48,12 @@ class BandsController < ApplicationController
       flash[:alarm] = "Arrrrggg deleted"
     end  
     redirect_to user_bands_path   
+  end	
+  def list
+  	fail
+  	bands=Band.all
+  	
+  	render json: bands
   end	
 
 

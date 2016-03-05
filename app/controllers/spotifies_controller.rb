@@ -4,7 +4,6 @@ class SpotifiesController < ApplicationController
 		Band.all.each do |item|
 			update_popularity(item)
 		end
-		
 	end	
 	def update_popularity(item)
 			id=item.id
@@ -27,11 +26,7 @@ class SpotifiesController < ApplicationController
 			@update_result.push("Band #{id} popularity updated successfulluy \n")
 		else
 			@update_result.push("The band #{id} has not been updated \n")
-			# spoti.save
 		end	
-		
-
 	end	
 end
 
-# 5D5oIuHtOHSaU5alV1HNXF

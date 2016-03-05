@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require init
+//= require loader
 //= require_tree .
 //= require bootstrap.js
 
