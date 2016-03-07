@@ -1,4 +1,4 @@
-
+(function () {
     
 
       // Load the Visualization API and the corechart package.
@@ -11,13 +11,11 @@
       // instantiates the pie chart, passes in the data and
       // draws it.
       function drawChart() {
-        data=[
-          ['created_at', 'band1', 'band2'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ];
+        var data=$('.data_to_graph').data('graph');
+
+        
+        
+        
 
         // Create the data table.
         var data = google.visualization.arrayToDataTable(data);
@@ -33,4 +31,5 @@
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
         chart.draw(data, options);
       }
+})();      
     
