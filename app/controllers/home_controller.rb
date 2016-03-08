@@ -16,15 +16,15 @@ class HomeController < ApplicationController
 
   
 
-  @data = ['Created_at']
+  @data = [['Created_at']]
   @bands.each do |item|
-    @data<<item.name 
+    @data[0]<<item.name 
   end 
 
   array_of_dates_all=Spotify.pluck(:created_at).sort
   array_of_dates=[]
   array_of_dates_all.each do |item|
-    array_of_dates<<item.strftime("%d-%m")
+    array_of_dates<<item.strftime("%d-%m-%y")
   end  
  
   array_of_dates.uniq!
@@ -33,7 +33,24 @@ class HomeController < ApplicationController
     @data<<[item]
   end
   
-  fail  
+
+  @data.each_with_index{|date,i|
+    next if i == 0
+    @bands.each do |item|
+      d=Time.strptime(date[0], '%d-%m-%y')
+      record=item.spotifies.find_by(:created_at => d.beginning_of_day..d.end_of_day)
+      if record == nil
+        @data[i]<<0
+      else 
+        @data[i]<<record.popularity
+      end  
+      
+      
+      
+      # item.spotifies.
+    end 
+  }
+ 
 
   # array_of_dates.each_with_index{|date,i|
   #   @bands.each do |item|
@@ -43,15 +60,14 @@ class HomeController < ApplicationController
 
   
 
-  Primera data: Spotify.all.minimum(:created_at).strftime("%d-%m")
+ 
 
-  @data=[
-          ['created_at', 'band1', 'band2'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ];
+  # @data=[['created_at', 'band1', 'band2'],
+  #         ['2004',  1000,      400],
+  #         ['2005',  1170,      460],
+  #         ['2006',  660,       1120],
+  #         ['2007',  1030,      540]
+  #       ];
 
     
 

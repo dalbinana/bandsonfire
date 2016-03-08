@@ -12,6 +12,7 @@
       // draws it.
       function drawChart() {
         var data=$('.data_to_graph').data('graph');
+        debugger
 
         
         
@@ -25,7 +26,9 @@
           title: 'Company Performance',
           curveType: 'function',
           legend: { position: 'bottom' }
+
         };
+
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
