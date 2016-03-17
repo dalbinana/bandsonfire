@@ -12,7 +12,7 @@
       // draws it.
       function drawChart() {
         var data=$('.data_to_graph').data('graph');
-        debugger
+        
 
         
         
